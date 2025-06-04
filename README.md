@@ -7,4 +7,6 @@ Standardised KPHO style map using ggplot2, sf and patchwork code.
 ### kpho_trend() ***WIP***  
 Standardised KPHO style trend graph using ggplot2 code.
 ### kpho_colours() ***WIP***  
-Standardised KPHO colour palettes (for district, utla, hcp and nhs trust) printed in the console or within ggplot2 code.
+Standardised KPHO colour palettes (for district, utla, hcp and nhs trust) printed in the console or within ggplot2 code.  
+### icd10_code_to_name()  
+Converts ICD10 codes to the corresponding name of causes of death. Can provide high-level categories of causes of death or more detailed categories.
