@@ -3,4 +3,5 @@ This package contains useful functions for the [Kent Public Health Observatory](
 
 ## Current functions
 kpho_map()  
-kpho_trend() -WIP-  
+kpho_trend() **WIP**  
+kpho_colours() **WIP**
