@@ -14,25 +14,26 @@ kpho_colours <- function(geography){
     district <- c("Ashford"="", "Canterbury"="", "Dartford"="", "Dover"="", "Folkestone & Hythe"="", "Gravesham"="", "Maidstone"="", "Sevenoaks"="", "Swale"="", "Thanet"="",
         "Tonbridge & Malling"="", "Tunbridge Wells"="")
 
-    hcp <- c("East Kent HCP"="", "West Kent HCP"="", "Medway & Swale HCP"="", "Dartford, Gravesham & Swanley HCP"="")
+    hcp <- c("East Kent HCP"="#4d4dff", "West Kent HCP"="#ff4949", "Medway & Swale HCP"="#cfcf3b", "Dartford, Gravesham & Swanley HCP"="#3cb83c")
 
-    nhs_trust <- c()
+    nhs_trust <- c("Dartford and Gravesham NHS Trust"="", "East Kent Hospitals University NHS Foundation Trust"="", "Kent Community Health NHS Foundation Trust"="",
+        "Kent and Medway NHS and Social Care Partnership Trust"="", "Maidstone and Tunbridge Wells NHS Trust"="", "Medway NHS Foundation Trust"="")
 
     utla_national <- c("Kent"="#2D7C82", "Medway"="#D04F30", "Kent & Medway"="#7D3F64", "South east region"="#338543", "England"="#0245A1")
     
-    district_medway <- c("Ashford"="", "Canterbury"="", "Dartford"="", "Dover"="", "Folkestone & Hythe"="", "Gravesham"="", "Maidstone"="", "Sevenoaks"="", "Swale"="", "Thanet"="",
-        "Tonbridge & Malling"="", "Tunbridge Wells"="", "Medway"="")
+    district_medway <- c("Ashford"="", "Canterbury"="", "Dartford"="", "Dover"="", "Folkestone & Hythe"="", "Gravesham"="", "Maidstone"="", "Sevenoaks"="", "Swale"="",
+        "Thanet"="", "Tonbridge & Malling"="", "Tunbridge Wells"="", "Medway"="")
     
     if(geography=="district"){
-        paste0(district)
+        print(district)
     } else if(geography=="hcp"){
-        paste0(hcp)
+        print(hcp)
     } else if(geography=="nhs_trust"){
-        paste0(nhs_trust)
+        print(nhs_trust)
     } else if (geography=="utla_national"){
-        paste0(utla_national)
+        print(utla_national)
     } else if(geography=="district_medway"){
-        paste0(district_medway)
+        print(district_medway)
     } else{
         stop("Please select a valid geography. You can choose from: district, hcp, nhs_trust or pcn.")
     }
