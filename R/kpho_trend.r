@@ -23,6 +23,7 @@
 #'                             timerange = c("2012", "2013", "2014", "2015"),
 #'                             ci = FALSE)
 #' # hello Harry
+#' # saying hello again
 #' @export
 kpho_trend <- function(data,
     values,
