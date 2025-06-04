@@ -12,7 +12,7 @@
 #' @param palette A concatenated string of group names and color values to be applied to the graph. Default is set to null. Use `kpho_colours()`.
 #' @param ci A logical variable for the inclusion of confidence intervals which defaults to FALSE. If set to TRUE, the columns 'lowercl' and 'uppercl' in 'data' are needed.
 #' @return A patchwork object.
-#' 
+#' # goodbye Harry 
 #' @examples 
 #' smoking_trend <- kpho_trend(data = smoking_prevalence,
 #'                             values = "numbers",
