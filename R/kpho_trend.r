@@ -22,7 +22,7 @@
 #'                             stat_type = "Prevalence (%)"
 #'                             timerange = c("2012", "2013", "2014", "2015"),
 #'                             ci = FALSE)
-#' 
+#' # hello Harry
 #' @export
 kpho_trend <- function(data,
     values,
