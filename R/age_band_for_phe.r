@@ -17,7 +17,7 @@
 #' 
 #' 
 #' @export
-age_band_for_phe <- function(df, age_column) {
+age_band_for_phe_le <- function(df, age_column) {
   df <- df %>%
   mutate(age_band = cut({{age_column}}, 
                      breaks = c(-1, 0, 4, 9, 14, 19, 24, 29, 34, 39, 
@@ -28,4 +28,3 @@ age_band_for_phe <- function(df, age_column) {
                                 55, 60, 65, 70, 
                                 75, 80, 85, 90)))
 }
-
