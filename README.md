@@ -9,4 +9,6 @@ Standardised KPHO style trend graph using ggplot2 code.
 ### kpho_colours() ***WIP***  
 Standardised KPHO colour palettes (for district, utla, hcp and nhs trust) printed in the console or within ggplot2 code.  
 ### icd10_code_to_name()  
-Converts ICD10 codes to the corresponding name of causes of death. Can provide high-level categories of causes of death or more detailed categories.
+Converts ICD10 codes to the corresponding name of causes of death. Can provide high-level categories of causes of death or more detailed categories.  
+### age_band_for_phe_le()  
+Creates a new column of age bands based on a column of single year ages. The age bands come out in the format needed to use the PHE indicators life expectancy function. 
