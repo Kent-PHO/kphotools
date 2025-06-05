@@ -12,8 +12,8 @@
 #' @examples 
 #' test_df <- data.frame(id = 1:6, age = c(0, 3, 4, 5, 12, 91))
 #' 
-#' df <- age_band_for_phe(data = test_df,
-#'                             age_column = age)
+#' df <- age_band_for_phe(df = test_df,
+#'                        age_column = age)
 #' 
 #' 
 #' @export
