@@ -1,4 +1,4 @@
-#' @title icd10_code_to_name
+#' @title icd10_name
 #'
 #' @description This function creates a new column of death categories based on a column of ICD 10 codes
 #' 
@@ -19,7 +19,7 @@
 #'                             detailed = FALSE)
 #' 
 #' @export
-icd10_code_to_name <- function(df, code_column, detailed = TRUE) {
+icd10_name <- function(df, code_column, detailed = TRUE) {
   code_column <- enquo(code_column)
   if (detailed) {
     df <- df %>% mutate(icd10_name_detailed = case_when(

@@ -4,7 +4,7 @@ test_df <- tibble(
 )
 
 test_that("Detailed classification works correctly", {
-  result <- icd10_code_to_name(test_df, icd10, detailed = TRUE)
+  result <- icd10_name(test_df, icd10, detailed = TRUE)
 
   expect_equal(result$icd10_name_detailed[1], "Lung cancer")
   expect_equal(result$icd10_name_detailed[2], "Ischaemic heart diseases")
@@ -15,7 +15,7 @@ test_that("Detailed classification works correctly", {
 })
 
 test_that("Broad classification works correctly", {
-  result <- icd10_code_to_name(test_df, icd10, detailed = FALSE)
+  result <- icd10_name(test_df, icd10, detailed = FALSE)
 
   expect_equal(result$icd10_name_broad[1], "Cancer")
   expect_equal(result$icd10_name_broad[2], "Circulatory")
