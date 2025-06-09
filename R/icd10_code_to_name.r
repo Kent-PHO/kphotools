@@ -2,19 +2,19 @@
 #'
 #' @description This function creates a new column of death categories based on a column of ICD 10 codes
 #' 
-#' @param data Dataframe containing a column with ICD 10 codes.
+#' @param df Dataframe containing a column with ICD 10 codes.
 #' @param code_column A column found in 'data' containing ICD 10 codes.
 #' @param detailed Specifies whether to return detailed or broad categories. Defaults to TRUE for detailed categories. Set to FALSE for broad categories.
 #' 
 #' @return (dataframe) A dataframe with a new column containing the ICD 10 code names.
 #' 
 #' @examples 
-#' df_death <- icd10_code_to_name(data = death_data,
+#' df_death <- icd10_name(df = death_data,
 #'                             code_column = underlying_cause_of_death,
 #'                             detailed = TRUE)
 #' 
 #' to get broad categories 
-#' df_death <- icd10_code_to_name(data = death_data,
+#' df_death <- icd10_name(df = death_data,
 #'                             code_column = underlying_cause_of_death,
 #'                             detailed = FALSE)
 #' 
