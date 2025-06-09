@@ -1,8 +1,8 @@
 # kphotools R package
 This package contains useful functions for the [Kent Public Health Observatory](https://www.kpho.org.uk/) team in Kent County Council.
 
-# Installation
-##  With devtools
+## Installation
+###  With devtools
 ```R
 devtools::install_github("harrywhitlow/kphotools")
 ```
