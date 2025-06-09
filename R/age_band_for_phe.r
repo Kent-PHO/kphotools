@@ -19,7 +19,7 @@
 #'                        age_column = age)
 #' 
 #' # to return age bands with a 0-4 and then in 5 year bands 
-#' df <- age_baning(df = test_df,
+#' df <- age_banding(df = test_df,
 #'                        age_column = age,
 #'                        zero_band = FALSE)
 #' 
