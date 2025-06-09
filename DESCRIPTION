@@ -1,9 +1,9 @@
 Package: kphotools
 Title: Functions for standardised KPHO outputs and useful tools.
 Version: 0.0.0.9000
-Authors@R: 
-    person("Harry", "Whitlow", , "harry.whitlow@kent.gov.uk", role = c("aut", "cre")),
-    person("Heather", "Hopton", "Heather.Hopton@kent.gov.uk", role=c("aut"))
+Authors@R: c(
+    person("Harry", "Whitlow", email="harry.whitlow@kent.gov.uk", role = c("aut", "cre")),
+    person("Heather", "Hopton", email="Heather.Hopton@kent.gov.uk", role=c("aut")))
 Description: This package contains various functions to standardise data visualisation for core reports, alongside some other useful tools to help produce regular or ad-hoc outputs.
 Depends: sf,
          dplyr,
