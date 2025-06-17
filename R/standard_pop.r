@@ -15,9 +15,8 @@
 #' @examples 
 #' test_df <- data.frame(id = 1:6, age_band = c(0, 5, 10, 15, 35, 50))
 #' 
-#' # to return age bands with a zero band, 1-4 and then in 5 year bands 
 #' df <- add_esp(df = test_df,
-#'               age_column = age_band)
+#'               age_band_col = age_band)
 #' 
 #' @export
 add_esp <- function(df, age_band_col) {
