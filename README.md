@@ -4,7 +4,7 @@ This package contains useful functions for the [Kent Public Health Observatory](
 ## Installation
 ###  With devtools
 ```R
-devtools::install_github("harrywhitlow/kphotools")
+devtools::install_github("Kent-PHO/kphotools")
 ```
 
 ## Current functions
