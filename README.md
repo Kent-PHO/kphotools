@@ -4,7 +4,7 @@ This package contains useful functions for the [Kent Public Health Observatory](
 ## Installation
 ###  With devtools
 ```R
-devtools::install_github("harrywhitlow/kphotools")
+devtools::install_github("Kent-PHO/kphotools")
 ```
 
 ## Current functions
@@ -17,4 +17,6 @@ Converts ICD10 codes to the corresponding name of causes of death. Can provide h
 ### age_banding()  
 Creates a new column of age bands based on a column of single year ages. The age bands come out in the format needed to use the PHE indicators life expectancy function. 
 ### add_esp()
-Creates a new column of european standard population (ESP) weights based on a column of age bands in your dataframe. The ESP weights come out in the format needed to use some of the PHEindicators functions. 
+Creates a new column of european standard population (ESP) weights based on a column of age bands in your dataframe. The ESP weights come out in the format needed to use some of the PHEindicators functions.  
+### lt()
+Creates a lifetable when supplied a dataframe with only two columns (single year of age and corresponding deaths). Goes beyond existing lifetable functions by providing each parameter in the lifetable calculation needed for other forumla (e.g. decomposition of life expectnacy gaps).
