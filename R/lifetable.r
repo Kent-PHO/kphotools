@@ -4,8 +4,6 @@
 #' 
 #' @param df A dataframe with two columns: single year of age and the associated deaths within a certain time period. Note: all ages, even if there are 0 deaths recorded, must be present for an accurate calculation of life expectancy.
 #' 
-#' @example lifetable_male <- lt(df_male)
-#' 
 #' @return A dataframe with all constituent elements of a lifetable calculation.
 #' 
 #' @export 
