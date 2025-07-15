@@ -4,7 +4,7 @@
 \alias{icd10_name}
 \title{icd10_name}
 \usage{
-icd10_name(df, code_column, detailed = TRUE)
+icd10_name(df, code_column, detailed = TRUE, excel_decomp = TRUE)
 }
 \arguments{
 \item{df}{Dataframe containing a column with ICD 10 codes.}
@@ -12,9 +12,11 @@ icd10_name(df, code_column, detailed = TRUE)
 \item{code_column}{A column found in 'data' containing ICD 10 codes.}
 
 \item{detailed}{Specifies whether to return detailed or broad categories. Defaults to TRUE for detailed categories. Set to FALSE for broad categories.}
+
+\item{excel_decomp}{Limits to 24 categories so it fits in the excel template for LE decomposition. You may need to recategorise breast or prostate cancer depending on sex. Defaults to true. The categories removed are epilepsy, bone cancer, sudden infant death syndrome, and other mental and behavioural conditions.}
 }
 \value{
-(dataframe) A dataframe with a new column containing the ICD 10 code names.
+(dataframe) A dataframe with a new column containing the ICD 10 code names, called either \code{icd10_name_detailed} or \code{icd10_name_broad} depending on the value of \code{detailed}.
 }
 \description{
 This function creates a new column of death categories based on a column of ICD 10 codes
